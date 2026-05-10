@@ -9,3 +9,8 @@ declare module "*.yml?raw" {
   const content: string;
   export default content;
 }
+
+// Cloudflare Worker environment bindings.
+export interface Env {
+  [key: string]: unknown;
+}
