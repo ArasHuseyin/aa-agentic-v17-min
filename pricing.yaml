@@ -15,6 +15,11 @@ plans:
   - name: Free
     price: 0
 
+  - name: Starter
+    interval: monthly
+    price: 19
+    trial_days: 7
+
   - name: Pro
     interval: monthly
     price: 29

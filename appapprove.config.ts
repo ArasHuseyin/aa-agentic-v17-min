@@ -16,6 +16,7 @@ const config: AppApproveConfig = {
     "customers/redact": "~/webhooks/customers-redact",
     "shop/redact": "~/webhooks/shop-redact",
     "app_subscriptions/update": "~/webhooks/app-subscriptions-update",
+    "products/update": "~/webhooks/products-update",
   },
   crons: {
     // CF Cron Trigger schedules. The example handler runs hourly.
