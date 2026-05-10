@@ -1,5 +1,5 @@
 import type { AppLoadContext } from "@remix-run/cloudflare";
-import type { Env } from "~/env.d";
+import type { Env } from "../../load-context";
 
 interface ProductsUpdatePayload {
   id: number;

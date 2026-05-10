@@ -22,7 +22,7 @@ import { useState, useCallback } from "react";
 import { authenticate } from "~/lib/shopify.server";
 import { shopifyAdmin } from "~/lib/shopify-api.server";
 import { captureSetupStep } from "~/lib/merchant-qa.server";
-import type { Env } from "~/env.d";
+import type { Env } from "../../load-context";
 
 interface ShopInfo {
   name: string;

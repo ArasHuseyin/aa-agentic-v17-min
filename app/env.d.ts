@@ -1,16 +1,3 @@
-/// <reference types="vite/client" />
-
-// Vite ?raw imports — yaml/text/etc. resolved at build time as a string.
-declare module "*.yaml?raw" {
-  const content: string;
-  export default content;
-}
-declare module "*.yml?raw" {
-  const content: string;
-  export default content;
-}
-
-// Cloudflare Worker environment bindings.
-export interface Env {
-  [key: string]: unknown;
-}
+// Re-export the canonical Env type from load-context so all routes
+// reference a single source of truth and avoid type-mismatch errors.
+export type { Env } from "../load-context";
